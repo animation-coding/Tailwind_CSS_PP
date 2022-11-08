@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website Design Tailwind</title>
+    <!--icon-->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!--slider-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.4/swiper-bundle.css">
+    <!--tailwind.css-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--main CSS-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--parallax-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+
+</head>
+
+<body>
+
+    <!--:::::::::::::::::::::-Header-::::::::::::::::::::-->
+    <header class="w-full fixed top-0 left-0 bg-[#090a1a] z-[999] flex justify-between items-center h-16 lg:px-0 px-4">
+        <a class="text-white block md:hidden" href="#" id="menuOpen">
+            <img src="assets/img/ac.png" class="h-7 sm:h-9" alt="logo" />
+        </a>
+        <!--open button-->
+        <button class="text-white cursor-pointer block md:hidden" id="nav-toggle">
+            <i class="fi fi-rr-apps"></i>
+        </button>
+
+        <nav class="w-full visible fixed lg:px-0 md:left-0 left-[-100%] md:block top-0 bg-[#090a1a] lg:bg-transparent md:h-auto md:py-0 h-screen py-5 px-2 z-[100]"
+            id="nav-menu">
+            <div
+                class="menu_Slider max-w-5xl md:h-auto md:flex md:flex-wrap md:justify-between md:items-center md:mx-auto mx-6 grid gap-8 md:gap-0 lg:gap8 h-full">
+                <!--close button-->
+                <button class="text-white text-xl block absolute right-6 p-1 cursor-pointer md:hidden"
+                    id="menu_hide_btn">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+
+                <div>
+                    <a href="#" class="flex items-center">
+                        <img src="assets/img/ac.png" class="h-6 sm:h-9" alt="logo" />
+                    </a>
+                    <p class="text-white text-base font-semibold cursor-pointer md:hidden">
+                        Youtuber
+                    </p>
+                </div>
+                <div class="flex md:order-2 order-1">
+                    <button type="button"
+                        class="text-white h-fit bg-[#647bff] hover:text-[#647bff] relative overflow-hidden z-10 btn__hover focus:outline-none font-medium rounded-lg text-sm px-8 py-3 text-center mr-3 md:mr-0">
+                        Hire Me
+                    </button>
+                </div>
+                <div class="nav__menu justify-between items-center w-full md:flex md:w-auto md:order-1">
+                    <ul class="flex flex-col p-4 mt-4 md:flex-row md:mt-0 md:text-base md:font-medium">
+                        <li class="my-4 mx-1 md:my-0">
+                            <a href="#home"
+                                class="block md:py-1 md:px-4 text-white md:hover:bg-[#647bff] md:hover:bg-opacity-[0.161] md:hover:text-[#647bff] hover:text-[#647bff] rounded">
+                                Home
+                            </a>
+                        </li>
+                        <li class="my-4 mx-1 md:my-0">
+                            <a href="#about"
+                                class="block md:py-1 md:px-4 text-white md:hover:bg-[#647bff] md:hover:bg-opacity-[0.161] md:hover:text-[#647bff] hover:text-[#647bff] rounded">About</a>
+                        </li>
+                        <li class="my-4 mx-1 md:my-0">
+                            <a href="#services"
+                                class="block md:py-1 md:px-4 text-white md:hover:bg-[#647bff] md:hover:bg-opacity-[0.161] md:hover:text-[#647bff] hover:text-[#647bff] rounded">
+                                Services
+                            </a>
+                        </li>
+                        <li class="my-4 mx-1 md:my-0">
+                            <a href="#protfolio"
+                                class="block md:py-1 md:px-4 text-white md:hover:bg-[#647bff] md:hover:bg-opacity-[0.161] md:hover:text-[#647bff] hover:text-[#647bff] rounded">
+                                Portfolio
+                            </a>
+                        </li>
+                        <li class="my-4 mx-1 md:my-0">
+                            <a href="#contact"
+                                class="block md:py-1 md:px-4 text-white md:hover:bg-[#647bff] md:hover:bg-opacity-[0.161] md:hover:text-[#647bff] hover:text-[#647bff] rounded">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--::::::::::::::::::-hero section-::::::::::::::::::-->
+    <section
+        class="lg:bg-[url('./assets/img/bg.png')] bg-[#090a1a] relative mx-auto bg-center pt-20 lg:pt-36 overflow-hidden"
+        id="home">
+        <div class="max-w-7xl relative flex  justify-center mx-auto flex-col-reverse lg:flex-row lg:justify-between">
+            <div
+                class="flex flex-col mt-8 justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
+                <h1 class="text-2xl font-normal leading-none lg:text-5xl text-white  sr01">
+                    I'M
+                    <br />
+                    Animation
+                    <span class="font-semibold "> Coding </span>
+                </h1>
+                <span class="mt-3 lg:mx-0 mx-auto w-24 h-[3px] bg-gray-200 rounded sr02"></span>
+                <p class="mt-2 mb-0 lg:mb-8 text-base md:text-lg text-white sr02">
+                    Professional Website Designer With 4 Years of
+                    <br class="hidden md:inline lg:hidden" />
+                    Work Experience
+                </p>
+                <div class="flex justify-center space-y-4 flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
+                    <a href="#"
+                        class="flex my-8 lg:my-0 items-center lg:text-lg text-white md:px-8 md:py-4 px-4 py-3 text-sm font-normal rounded bg-[#647bff] hover:bg-[#fff] hover:text-[#647bff] sr03">
+                        <i class="fa-solid fa-cloud-arrow-down flex mr-2"></i>Download CV
+                    </a>
+                </div>
+            </div>
+
+            <div class="lg:block hidden absolute  ">
+                <span class="absolute opacity-10 -top-36 scene" id="scene">
+                    <h1 class="text-white font-bold uppercase text-[18rem]" data-depth="0.40">Hello</h1>
+                </span>
+                <span class="absolute w-8 left-56 top-32 scene2" id="scene2">
+                    <img src="assets/img/Ellipse 1.png" alt="" data-depth="2.5">
+                </span>
+                <span class="absolute w-8 left-[72rem] top-[10rem] scene2" id="scene3">
+                    <img src="assets/img/Vector 1.png" alt="" data-depth="1.9">
+                </span>
+                <span class="absolute w-8  left-[40rem] top-[14rem] scene2" id="scene4">
+                    <img src="assets/img/Rectangle 1.png" alt="" data-depth="2">
+                </span>
+            </div>
+
+            <div
+                class="flex items-center relative z-10 justify-center mt-0 mr-0 lg:mr-6 lg:mt-8 h-72 sm:h-80 lg:h-[42rem] xl:h-112 2xl:h-128">
+                <img src="assets/img/hero.png" alt=""
+                    class="object-contain h-72 sm:h-80 lg:h-[42rem] xl:h-112 2xl:h-128 sr03" />
+            </div>
+            <div
+                class="absolute flex left-0 right-0 top-auto lg:top-0 lg:left-auto lg:-right-32 bottom-0 justify-center items-center gap-4 lg:rotate-90">
+                <span class="text-white text-sm font-semibold tracking-widest w-max">
+                    Follow me
+                </span>
+                <span class="w-12 h-[3px] bg-[#647bff] rounded"></span>
+
+                <div class="flex gap-4">
+                    <a href="#" class="text-white hover:text-[#647bff] transition duration-100">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+
+                    <a href="#" class="text-white hover:text-[#647bff] transition duration-100">
+                        <i class="fa-brands fa-dribbble"></i>
+                    </a>
+
+                    <a href="#" class="text-white hover:text-[#647bff] transition duration-100">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                    <a href="#" class="text-white hover:text-[#647bff] transition duration-100">
+                        <i class="fa-brands fa-discord"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--::::::::::::::::::-About section-:::::::::::::::::-->
+    <section class="bg-[#090a1a] p-6 mx-auto pb-14 pt-20 lg:pt-32 lg:pb-28" id="about">
+        <div class="flex justify-center text-center mb-20 mt-4 mx-auto">
+            <h2 class="text-white font-bold select-none	relative inline-block uppercase text-xl md:text-4xl z-10 sr01">
+                About
+                <span class="text-[#647bff]">US</span>
+                <span
+                    class="absolute left-2/4 top-2/4 text-5xl md:text-6xl lg:text-8xl -translate-x-2/4 -translate-y-2/4 z-[-1] opacity-10">
+                    About
+                </span>
+            </h2>
+        </div>
+
+        <div class="max-w-7xl mt-4 relative mx-auto">
+            <div class="flex w-full  flex-col md:flex-row sm:justify-center items-center">
+                <div
+                    class="w-[250px] md:w-[300px] flex justify-center items-center relative before:hidden before:md:block before:absolute md:before:w-[300px] md:before:h-[365px] before:border-dashed before:border-2 before:border-[#647bff] md:before:-left-7 md:before:top-7  before:rounded-[20px] before:z-[10]">
+                    <img class=" rounded-xl object-cover z-20" src="assets/img/about_me.png">
+                </div>
+                <div class="flex flex-col p-5 md:p-0 md:pl-16 md:w-[50%]">
+                    <div class="text-white sr02">
+                        <h3
+                            class="text-lg font-medium mb-2.5 bg-[#647bff] bg-opacity-[0.161] text-[#647bff] rounded px-4 w-max">
+                            Bio</h3>
+                        <p class=" leading-7 text-sm">I'm Creative Director and Web
+                            Designer from Sydney, Australia, working in web development and print media. I enjoy turning
+                            complex problems into simple, beautiful and intuitive designs.</p>
+                        <p class=" leading-7 mt-2.5 text-sm">My aim is to bring across your
+                            message and identity in the most creative way. I created web design for many famous brand
+                            companies.</p>
+                    </div>
+                    <div class="text-white mt-6 sr03">
+                        <div class=" grid grid-cols-1 sm:grid-cols-2 gap-6">
+
+                            <div class="flex">
+                                <h5
+                                    class="text-base text-white font-medium block lg:block md:flex md:justify-start md:flex-col">
+                                    <span class="text-[#647bff] font-semibold md:text-lg text-base mr-4">Age
+                                        :...</span>
+                                    ZX
+                                </h5>
+                            </div>
+                            <div class="flex">
+                                <h5
+                                    class="text-base text-white font-medium block lg:block md:flex md:justify-start md:flex-col">
+                                    <span class="text-[#647bff] font-semibold md:text-lg text-base mr-4">Youtuber
+                                        :...</span>
+                                    Available
+                                </h5>
+                            </div>
+                            <div class="flex">
+                                <h5
+                                    class="text-base text-white font-medium block lg:block md:flex md:justify-start md:flex-col">
+                                    <span class="text-[#647bff] font-semibold md:text-lg text-base mr-4">
+                                        Phone :...</span>
+                                    XXX XXX XXXX
+                                </h5>
+                            </div>
+                            <div class="flex">
+                                <h5
+                                    class="text-base text-white font-medium block lg:block md:flex md:justify-start md:flex-col">
+                                    <span class="text-[#647bff] font-semibold md:text-lg text-base mr-4">
+                                        Nationality :...</span>
+                                    Youtuber
+                                </h5>
+                            </div>
+                            <div class="flex">
+                                <h5
+                                    class="text-base text-white font-medium block lg:block md:flex md:justify-start md:flex-col">
+                                    <span class="text-[#647bff] font-semibold md:text-lg text-base mr-4">
+                                        Address :...</span>
+                                    Google
+                                </h5>
+                            </div>
+                            <div class="flex">
+                                <h5
+                                    class="text-base text-white font-medium block lg:block md:flex md:justify-start md:flex-col">
+                                    <span class="text-[#647bff] font-semibold md:text-lg text-base mr-4">
+                                        Email :...</span>
+                                    xzy@gmail.com
+                                </h5>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="flex justify-start mt-5 sr04">
+                        <button
+                            class="flex text-white border border-[#647bff] w-28 h-14 md:w-32 justify-center items-center relative z-10 overflow-hidden hover:text-[#647bff] hover:border-none btn__hover focus:outline-none rounded-xl text-sm sm:text-base">
+                            Contact Me
+                        </button>
+                        <button
+                            class="ml-3 md:ml-8 flex text-white bg-[#647bff] border border-[#647bff] w-28 h-14 md:w-32 justify-center items-center relative z-10 overflow-hidden hover:text-[#647bff] hover:border-none btn__hover focus:outline-none rounded-xl text-sm sm:text-base">
+                            Hire Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--:::::::::::::::::-Services section-::::::::::::::::-->
+    <section class="bg-[#090a1a] p-6 mx-auto pb-14 pt-20 lg:pt-32 lg:pb-28 overflow-hidden" id="services">
+        <div class="flex justify-center text-center mb-20 mt-4 mx-auto">
+            <h2 class="text-white font-bold select-none	relative inline-block uppercase text-xl md:text-4xl z-10 sr01">
+                My
+                <span class="text-[#647bff]">Services</span>
+                <span
+                    class="absolute left-2/4 top-2/4 text-5xl md:text-6xl lg:text-8xl -translate-x-2/4 -translate-y-2/4 z-[-1] opacity-10">
+                    Services
+                </span>
+            </h2>
+        </div>
+
+        <div class="max-w-7xl mt-4 relative mx-auto ">
+            <div
+                class="max-w-xs md:max-w-[42rem] lg:max-w-[62rem] mx-auto grid grid-cols-1 pt-6 justify-items-center md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6">
+
+                <div
+                    class="flex flex-col items-center bg-transparent group hover:bg-[#111430] transition ease-in duration-300 rounded-lg p-4 lg:p-8 sr02">
+                    <div
+                        class="w-24 h-24 md:w-24 md:h-24 border-4 border-white border-dashed rounded-full overflow-hidden shadow-lg mb-2 md:mb-8">
+                        <img src="assets/img/icon/S_01.png" class="w-full h-full object-cover object-center p-5">
+                    </div>
+
+                    <div>
+                        <h4
+                            class="group-hover:text-[#647bff] text-white transition ease-in duration-300 md:text-lg font-medium text-center">
+                            Planning
+                        </h4>
+                        <p class="text-white text-sm text-center mt-4 mt:mb-8">Photo booth fam kinfolk
+                            cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center bg-[#111430] rounded-lg p-4 lg:p-8 sr03">
+                    <div
+                        class="w-24 h-24 md:w-24 md:h-24 border-4 border-white border-dashed rounded-full overflow-hidden shadow-lg mb-2 md:mb-8">
+                        <img src="assets/img/icon/S_02.png" class="w-full h-full object-cover object-center p-5">
+                    </div>
+
+                    <div>
+                        <h4 class="text-[#647bff] md:text-lg font-medium text-center">UI/Ux</h4>
+                        <p class="text-white text-sm text-center mt-4 mt:mb-8">Photo booth fam kinfolk
+                            cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.
+                        </p>
+
+
+                    </div>
+                </div>
+                <div
+                    class="flex flex-col items-center bg-transparent group hover:bg-[#111430] transition ease-in duration-300 rounded-lg p-4 lg:p-8 sr03">
+                    <div
+                        class="w-24 h-24 md:w-24 md:h-24 border-4 border-white border-dashed rounded-full overflow-hidden shadow-lg mb-2 md:mb-8">
+                        <img src="assets/img/icon/S_03.png" class="w-full h-full object-cover object-center p-5">
+                    </div>
+
+                    <div>
+                        <h4
+                            class="group-hover:text-[#647bff] text-white transition ease-in duration-300 md:text-lg font-medium text-center">
+                            Graphic Design
+                        </h4>
+                        <p class="text-white text-sm text-center mt-4 mt:mb-8">
+                            Photo booth fam kinfolk
+                            cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--:::::::::::::::::-Skill section-::::::::::::::::-->
+    <section class="bg-[#090a1a] mx-auto pb-14 pt-20 lg:pt-32 lg:pb-28 overflow-hidden">
+        <div class="flex justify-center text-center mb-20 mt-4 mx-auto">
+            <h2 class="text-white font-bold select-none	relative inline-block uppercase text-xl md:text-4xl z-10 sr01">
+                My
+                <span class="text-[#647bff]">Skill</span>
+                <span
+                    class="absolute left-2/4 top-2/4 text-5xl md:text-6xl lg:text-8xl -translate-x-2/4 -translate-y-2/4 z-[-1] opacity-10">
+                    Skill
+                </span>
+            </h2>
+        </div>
+
+        <div class="max-w-7xl mt-10 px-6 relative mx-auto ">
+            <div class="max-w-md md:max-w-[50rem] mx-auto">
+                <div class=" flex justify-center items-center mt-4 mb-8 md:gap-4 gap-2">
+                    <h3
+                        class="text-sm sm:text-base font-medium bg-[#647bff] bg-opacity-[0.161] text-[#647bff] rounded w-max px-2">
+                        Frontent
+                    </h3>
+                    <h3 class="text-sm sm:text-base font-medium text-white rounded w-max px-2">
+                        Motion Graphics
+                    </h3>
+                    <h3 class="text-sm sm:text-base font-medium text-white rounded w-max px-2">
+                        Animation
+                    </h3>
+                </div>
+
+                <div class="mt-12">
+                    <div class="md:flex sm:block items-center justify-between mb-10 sr02">
+                        <div class="md:pr-2 lg:pr-4 md:pb-0 pb-5">
+                            <h3 class="text-white sm:text-left text-center md:text-lg lg:text-xl font-medium">
+                                Bootstrap
+                            </h3>
+                        </div>
+                        <div class="flex md:gap-6 sm:gap-[1.2rem] gap-2 justify-center">
+                            <!-- circle navy blue -->
+                            <div>
+                                <div class="circle w-5 h-5 sm:w-7 sm:h-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"></div>
+                            </div>
+                            <div>
+                                <div class="circle w-5 h-5 sm:w-7 sm:h-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"></div>
+                            </div>
+                            <div>
+                                <div class="circle w-5 h-5 sm:w-7 sm:h-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"></div>
+                            </div>
+                            <div>
+                                <div class="circle w-5 h-5 sm:w-7 sm:h-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"></div>
+                            </div>
+                            <div>
+                                <div class="circle w-5 h-5 sm:w-7 sm:h-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"></div>
+                            </div>
+                            <div>
+                                <div class="circle w-5 h-5 sm:w-7 sm:h-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"></div>
+                            </div>
+                            <div>
+                                <div class="circle w-5 h-5 sm:w-7 sm:h-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"></div>
+                            </div>
+                            <div>
+                                <div class="circle w-5 h-5 sm:w-7 sm:h-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"></div>
+                            </div>
+
+                            <div>
+                                <div
+                                    class="circle w-5 h-5 sm:w-7 sm:h-7 md:w-8 md:h-8 bg-[#647bff] rounded-full overflow-hidden flex justify-center items-center">
+                                    <span class="text-white text-[10px] md:text-xs">90%</span>
+                                </div>
+                            </div>
+
+                            <!-- circle navy blue -->
+                            <div>
+                                <div class="circle w-5 h-5 sm:w-7 sm:h-7 md:w-8 md:h-8 bg-[#171b3c] rounded-full"></div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="md:flex sm:block items-center justify-between mb-10 sr03">
+                        <div class="md:pr-2 lg:pr-4 md:pb-0 pb-5">
+                            <h3 class="text-white sm:text-left text-center md:text-lg lg:text-xl font-medium">
+                                Tailwind CSS </h3>
+                        </div>
+                        <div class="flex md:gap-6 sm:gap-[1.2rem] gap-2 justify-center">
+                            <!-- circle navy blue -->
+                            <div>
+                                <div class="circle w-5 h-5 sm:w-7 sm:h-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"></div>
+                            </div>
+                            <div>
+                                <div class="circle w-5 h-5 sm:w-7 sm:h-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"></div>
+                            </div>
+                            <div>
+                                <div class="circle w-5 h-5 sm:w-7 sm:h-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"></div>
+                            </div>
+                            <div>
+                                <div class="circle w-5 h-5 sm:w-7 sm:h-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"></div>
+                            </div>
+                            <div>
+                                <div class="circle w-5 h-5 sm:w-7 sm:h-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"></div>
+                            </div>
+                            <div>
+                                <div class="circle w-5 h-5 sm:w-7 sm:h-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"></div>
+                            </div>
+                            <div>
+                                <div class="circle w-5 h-5 sm:w-7 sm:h-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"></div>
+                            </div>
+
+                            <div>
+                                <div
+                                    class="circle w-5 h-5 sm:w-7 sm:h-7 md:w-8 md:h-8 bg-[#647bff] rounded-full overflow-hidden flex justify-center items-center">
+                                    <span class="text-white text-[10px] md:text-xs">80%</span>
+                                </div>
+                            </div>
+
+                            <!-- circle navy blue -->
+                            <div>
+                                <div class="circle w-5 h-5 sm:w-7 sm:h-7 md:w-8 md:h-8 bg-[#171b3c] rounded-full"></div>
+                            </div>
+                            <div>
+                                <div class="circle w-5 h-5 sm:w-7 sm:h-7 md:w-8 md:h-8 bg-[#171b3c] rounded-full"></div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="md:flex sm:block items-center justify-between mb-10 sr04">
+                        <div class="md:pr-2 lg:pr-4 md:pb-0 pb-5">
+                            <h3 class="text-white sm:text-left text-center md:text-lg lg:text-xl font-medium">
+                                Javascript</h3>
+                        </div>
+                        <div class="flex md:gap-6 sm:gap-[1.2rem] gap-2 justify-center">
+                            <!-- circle navy blue -->
+                            <div>
+                                <div class="circle w-5 h-5 sm:w-7 sm:h-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"></div>
+                            </div>
+                            <div>
+                                <div class="circle w-5 h-5 sm:w-7 sm:h-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"></div>
+                            </div>
+                            <div>
+                                <div class="circle w-5 h-5 sm:w-7 sm:h-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"></div>
+                            </div>
+                            <div>
+                                <div class="circle w-5 h-5 sm:w-7 sm:h-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"></div>
+                            </div>
+                            <div>
+                                <div class="circle w-5 h-5 sm:w-7 sm:h-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"></div>
+                            </div>
+                            <div>
+                                <div class="circle w-5 h-5 sm:w-7 sm:h-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"></div>
+                            </div>
+                            <div>
+                                <div
+                                    class="circle w-5 h-5 sm:w-7 sm:h-7 md:w-8 md:h-8 bg-[#647bff] rounded-full overflow-hidden flex justify-center items-center">
+                                    <span class="text-white text-[10px] md:text-xs">70%</span>
+                                </div>
+                            </div>
+
+                            <!-- circle navy blue -->
+                            <div>
+                                <div class="circle w-5 h-5 sm:w-7 sm:h-7 md:w-8 md:h-8 bg-[#171b3c] rounded-full"></div>
+                            </div>
+                            <div>
+                                <div class="circle w-5 h-5 sm:w-7 sm:h-7 md:w-8 md:h-8 bg-[#171b3c] rounded-full"></div>
+                            </div>
+                            <div>
+                                <div class="circle w-5 h-5 sm:w-7 sm:h-7 md:w-8 md:h-8 bg-[#171b3c] rounded-full"></div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="md:flex sm:block items-center justify-between mb-10 sr05">
+                        <div class="md:pr-2 lg:pr-4 md:pb-0 pb-5">
+                            <h3 class="text-white sm:text-left text-center md:text-lg lg:text-xl font-medium">
+                                React JS</h3>
+                        </div>
+                        <div class="flex md:gap-6 sm:gap-[1.2rem] gap-2 justify-center">
+                            <!-- circle navy blue -->
+                            <div>
+                                <div class="circle w-5 h-5 sm:w-7 sm:h-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"></div>
+                            </div>
+                            <div>
+                                <div class="circle w-5 h-5 sm:w-7 sm:h-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"></div>
+                            </div>
+                            <div>
+                                <div class="circle w-5 h-5 sm:w-7 sm:h-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"></div>
+                            </div>
+                            <div>
+                                <div class="circle w-5 h-5 sm:w-7 sm:h-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"></div>
+                            </div>
+                            <div>
+                                <div class="circle w-5 h-5 sm:w-7 sm:h-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"></div>
+                            </div>
+                            <div>
+                                <div class="circle w-5 h-5 sm:w-7 sm:h-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"></div>
+                            </div>
+                            <div>
+                                <div class="circle w-5 h-5 sm:w-7 sm:h-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"></div>
+                            </div>
+                            <div>
+                                <div class="circle w-5 h-5 sm:w-7 sm:h-7 md:w-8 md:h-8 bg-[#647bff] rounded-full"></div>
+                            </div>
+
+                            <div>
+                                <div
+                                    class="circle w-5 h-5 sm:w-7 sm:h-7 md:w-8 md:h-8 bg-[#647bff] rounded-full overflow-hidden flex justify-center items-center">
+                                    <span class="text-white text-[10px] md:text-xs">90%</span>
+                                </div>
+                            </div>
+
+                            <!-- circle navy blue -->
+                            <div>
+                                <div class="circle w-5 h-5 sm:w-7 sm:h-7 md:w-8 md:h-8 bg-[#171b3c] rounded-full"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--::::::::::::::::-Portfolio section-:::::::::::::::-->
+    <section class="bg-[#090a1a] mx-auto pb-14 pt-20 lg:pt-32 lg:pb-28 overflow-hidden" id="protfolio">
+        <div class="flex justify-center text-center mb-20 mt-4 mx-auto">
+            <h2 class="text-white font-bold select-none	relative inline-block uppercase text-xl md:text-4xl z-10 sr06">
+                My
+                <span class="text-[#647bff]">Portfolio</span>
+                <span
+                    class="absolute left-2/4 top-2/4 text-5xl md:text-6xl lg:text-8xl -translate-x-2/4 -translate-y-2/4 z-[-1] opacity-10">
+                    Portfolio
+                </span>
+            </h2>
+        </div>
+
+        <div class="max-w-7xl mt-4 relative mx-auto">
+            <div class="container flex flex-col justify-center p-4 mx-auto">
+                <div class="grid grid-cols-1 gap-4 lg:grid-cols-4 sm:grid-cols-2 sr07">
+                    <img class="object-cover w-full rounded aspect-square"
+                        src="assets/img/project/protfolio-img01 (2).jpg">
+                    <img class="object-cover w-full rounded aspect-square"
+                        src="https://cdn.dribbble.com/userupload/3634201/file/original-f162cacc75f91c499e59bdbb802e6776.png?compress=1&resize=1024x768">
+                    <img class="object-cover w-full rounded aspect-square"
+                        src="https://cdn.dribbble.com/userupload/3226736/file/original-da85ee2aa86cc20bb564bc033002de4a.png?compress=1&resize=1024x768">
+                    <img class="object-cover w-full rounded aspect-square"
+                        src="https://cdn.dribbble.com/users/4502458/screenshots/18930102/media/e8493cbf421eea3a99d06d7c7b5eb8e0.jpg">
+
+                    <img class="object-cover w-full rounded aspect-square"
+                        src="assets/img/project/protfolio-img02 (1).jpg">
+                    <img class="object-cover w-full rounded aspect-square"
+                        src="https://cdn.dribbble.com/users/5048254/screenshots/17988724/media/46466df687f093b428b9097e82f6a755.png">
+                    <img class="object-cover w-full rounded aspect-square"
+                        src="https://cdn.dribbble.com/userupload/3219472/file/original-b9a5e045b0d50fce048b3ebef58e3897.png?compress=1&resize=1024x768">
+                    <img class="object-cover w-full rounded aspect-square" src="assets/img/project/unknown.png">
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--:::::::::::::::::-Projects section-::::::::::::::::-->
+    <section class="bg-[#090a1a] mx-auto pb-14 pt-20 lg:pt-32 lg:pb-28 overflow-hidden">
+        <div class="flex justify-center text-center mb-20 mt-4 mx-auto">
+            <h2 class="text-white font-bold select-none	relative inline-block uppercase text-xl md:text-4xl z-10 sr06">
+                My
+                <span class="text-[#647bff]">Projects</span>
+                <span
+                    class="absolute left-2/4 top-2/4 text-5xl md:text-6xl lg:text-8xl -translate-x-2/4 -translate-y-2/4 z-[-1] opacity-10">
+                    Projects
+                </span>
+            </h2>
+        </div>
+
+        <div class="max-w-7xl px-6 mt-10 relative mx-auto">
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 lg:gap-8 pt-14">
+
+                <!-- stat - start -->
+                <div class="flex flex-col justify-center items-center bg-[#111430] rounded-lg p-4 lg:p-8 sr07">
+                    <div class="w-20 md:w-28 mb-2">
+                        <img src="assets/img/icon/Group 1.svg" alt="">
+                    </div>
+                    <p class="text-base font-semibold text-white">300+ projects</p>
+                </div>
+                <!-- stat - end -->
+
+                <!-- stat - start -->
+                <div class="flex flex-col justify-center items-center bg-[#111430] rounded-lg p-4 lg:p-8 sr08">
+                    <div class="w-20 md:w-28 mb-2">
+                        <img src="assets/img/icon/Group(1).svg" alt="">
+                    </div>
+                    <p class="text-base font-semibold text-white">250+ projects</p>
+                </div>
+                <!-- stat - end -->
+
+                <!-- stat - start -->
+                <div class="flex flex-col justify-center items-center bg-[#111430] rounded-lg p-4 lg:p-8 sr09">
+                    <div class="w-20 md:w-28 mb-2">
+                        <img src="assets/img/icon/Group.svg" alt="">
+                    </div>
+                    <p class="text-base font-semibold text-white">220+ projects</p>
+                </div>
+                <!-- stat - end -->
+
+                <!-- stat - start -->
+                <div class="flex flex-col justify-center items-center bg-[#111430] rounded-lg p-4 lg:p-8 sr10">
+                    <div class="w-20 md:w-28 mb-2">
+                        <img src="assets/img/icon/Vector(1).svg" alt="">
+                    </div>
+                    <p class="text-base font-semibold text-white">100+ projects</p>
+                </div>
+                <!-- stat - end -->
+
+            </div>
+        </div>
+    </section>
+
+    <!--:::::::::::::::::-Blog section-::::::::::::::::-->
+    <section class="bg-[#090a1a] mx-auto pb-14 pt-20 lg:pt-32 lg:pb-28 overflow-hidden">
+        <div class="flex justify-center text-center mb-20 mt-4 mx-auto">
+            <h2 class="text-white font-bold select-none	relative inline-block uppercase text-xl md:text-4xl z-10 sr01">
+                My
+                <span class="text-[#647bff]">Blog</span>
+                <span
+                    class="absolute left-2/4 top-2/4 text-5xl md:text-6xl lg:text-8xl -translate-x-2/4 -translate-y-2/4 z-[-1] opacity-10">
+                    Blog
+                </span>
+            </h2>
+        </div>
+
+        <div class="max-w-sm sm:max-w-lg md:max-w-3xl lg:max-w-6xl w-full swiper pt-6 mx-auto">
+            <div class="slide-content overflow-hidden pb-14 mx-6 sr02">
+                <div class=" swiper-wrapper select-none">
+
+                    <div class="swiper-slide">
+                        <div class="h-full rounded-lg overflow-hidden bg-slate-800">
+                            <img class="h-56 rounded-lg w-full object-cover object-center"
+                                src="https://source.unsplash.com/random/300x300/?1" alt="blog">
+                            <div class="p-4 ">
+
+                                <div class="flex items-center justify-between text-xs mb-4">
+                                    <a class="text-white">
+                                        08 September 2022
+                                    </a>
+                                    <span class="text-[#6747f6]">
+                                        Tips & Tricks
+                                    </span>
+                                </div>
+
+                                <h1 class="title-font text-base font-semibold text-white text-center mb-4">
+                                    Tip for Conduction Remote UX Research and Testing</h1>
+                                <p class="mb-3 text-white text-xs text-center">
+                                    Photo booth fam kinfolk coldpressed sriracha leggings jianbing microdosing
+                                    tousled
+                                    microdosing tousled waistcoat.
+                                </p>
+                                <div class="p-2 w-full">
+                                    <button class="btn__hover flex mx-auto text-white hover:text-black bg-indigo-500 border-0 py-2 px-8 focus:outline-none rounded-lg text-sm sm:text-base
+                                        relative overflow-hidden z-10">
+                                        Button
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="h-full rounded-lg overflow-hidden bg-slate-800">
+                            <img class="h-56 rounded-lg w-full object-cover object-center"
+                                src="https://source.unsplash.com/random/300x300/?2" alt="blog">
+                            <div class="p-4 ">
+
+                                <div class="flex items-center justify-between text-xs mb-4">
+                                    <a class="text-white">
+                                        08 September 2022
+                                    </a>
+                                    <span class="text-[#6747f6]">
+                                        Tips & Tricks
+                                    </span>
+                                </div>
+
+                                <h1 class="title-font text-base font-semibold text-white text-center mb-4">
+                                    Tip for Conduction Remote UX Research and Testing</h1>
+                                <p class="mb-3 text-white text-xs text-center">
+                                    Photo booth fam kinfolk coldpressed sriracha leggings jianbing microdosing
+                                    tousled
+                                    microdosing tousled waistcoat.
+                                </p>
+                                <div class="p-2 w-full">
+                                    <button class="btn__hover flex mx-auto text-white hover:text-black bg-indigo-500 border-0 py-2 px-8 focus:outline-none rounded-lg text-sm sm:text-base
+                                        relative overflow-hidden z-10">
+                                        Button
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="h-full rounded-lg overflow-hidden bg-slate-800">
+                            <img class="h-56 rounded-lg w-full object-cover object-center"
+                                src="https://source.unsplash.com/random/300x300/?3" alt="blog">
+                            <div class="p-4 ">
+
+                                <div class="flex items-center justify-between text-xs mb-4">
+                                    <a class="text-white">
+                                        08 September 2022
+                                    </a>
+                                    <span class="text-[#6747f6]">
+                                        Tips & Tricks
+                                    </span>
+                                </div>
+
+                                <h1 class="title-font text-base font-semibold text-white text-center mb-4">
+                                    Tip for Conduction Remote UX Research and Testing</h1>
+                                <p class="mb-3 text-white text-xs text-center">
+                                    Photo booth fam kinfolk coldpressed sriracha leggings jianbing microdosing
+                                    tousled
+                                    microdosing tousled waistcoat.
+                                </p>
+                                <div class="p-2 w-full">
+                                    <button class="btn__hover flex mx-auto text-white hover:text-black bg-indigo-500 border-0 py-2 px-8 focus:outline-none rounded-lg text-sm sm:text-base
+                                        relative overflow-hidden z-10">
+                                        Button
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="h-full rounded-lg overflow-hidden bg-slate-800">
+                            <img class="h-56 rounded-lg w-full object-cover object-center"
+                                src="https://source.unsplash.com/random/300x300/?4" alt="blog">
+                            <div class="p-4 ">
+
+                                <div class="flex items-center justify-between text-xs mb-4">
+                                    <a class="text-white">
+                                        08 September 2022
+                                    </a>
+                                    <span class="text-[#6747f6]">
+                                        Tips & Tricks
+                                    </span>
+                                </div>
+
+                                <h1 class="title-font text-base font-semibold text-white text-center mb-4">
+                                    Tip for Conduction Remote UX Research and Testing</h1>
+                                <p class="mb-3 text-white text-xs text-center">
+                                    Photo booth fam kinfolk coldpressed sriracha leggings jianbing microdosing
+                                    tousled
+                                    microdosing tousled waistcoat.
+                                </p>
+                                <div class="p-2 w-full">
+                                    <button class="btn__hover flex mx-auto text-white hover:text-black bg-indigo-500 border-0 py-2 px-8 focus:outline-none rounded-lg text-sm sm:text-base
+                                        relative overflow-hidden z-10">
+                                        Button
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-pagination sr03"></div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--:::::::::::::::::-Contact section-::::::::::::::::-->
+    <section class="bg-[#090a1a] mx-auto pb-14 pt-20 lg:pt-32 lg:pb-28 overflow-hidden" id="contact">
+        <div class="flex justify-center text-center mb-20 mt-4 mx-auto">
+            <h2 class="text-white font-bold select-none	relative inline-block uppercase text-xl md:text-4xl z-10 sr01">
+                Contact
+                <span class="text-[#647bff]">Me</span>
+                <span
+                    class="absolute left-2/4 top-2/4 text-5xl md:text-6xl lg:text-8xl -translate-x-2/4 -translate-y-2/4 z-[-1] opacity-10">
+                    Contact
+                </span>
+            </h2>
+        </div>
+
+        <div class="max-w-md md:max-w-[50rem] px-4 sm:px-0 lg:w-1/2 md:w-2/3 mx-auto pt-10">
+            <div class="flex flex-wrap -m-2">
+                <div class="p-2 w-full sr02">
+                    <div class="relative">
+                        <input type="text" id="name" placeholder="Your Name*"
+                            class="w-full bg-[#2d2d53] rounded-xl border border-[#2d2d53] focus:border-indigo-500  outline-none text-white py-4 px-6 sm:py-5 sm:px-8 placeholder-white text-base font-light transition-colors duration-200 ease-in-out">
+                    </div>
+                </div>
+                <div class="p-2 w-full sr03">
+                    <div class="relative">
+                        <input type="email" id="email" placeholder="Email Address*"
+                            class="w-full bg-[#2d2d53] rounded-xl border border-[#2d2d53] focus:border-indigo-500  outline-none text-white py-4 px-6 sm:py-5 sm:px-8 placeholder-white text-base font-light transition-colors duration-200 ease-in-out">
+                    </div>
+                </div>
+                <div class="p-2 w-full sr04">
+                    <div class="relative">
+                        <textarea id="message" name="message"
+                            class="w-full h-52 bg-[#2d2d53] rounded-xl border border-[#2d2d53] focus:border-indigo-500  outline-none text-white py-5 px-8 placeholder-white text-base font-light transition-colors duration-200 ease-in-out"></textarea>
+                    </div>
+                </div>
+
+                <div class="p-2 w-full sr05">
+                    <button class="btn__hover flex mx-auto text-white hover:text-black bg-indigo-500 border-0 py-2 px-10 focus:outline-none  rounded-lg text-lg
+                            relative overflow-hidden z-10">
+                        Submit
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--:::::::::::::::::-Sub section-::::::::::::::::-->
+
+    <section class="bg-[#090a1a] mx-auto pb-14 pt-20 lg:pt-32 lg:pb-28 overflow-hidden">
+        <div class="px-4 max-w-6xl sm:px-6 mx-auto">
+            <div class="md:px-12 md:py-16 px-4 sm:px-8 py-10 relative bg-[#111430] rounded-lg">
+
+                <div class="lg:flex-row justify-between items-center flex-col flex relative">
+                    <div class="lg:mb-0 lg:mr-16 text-center mb-6 sr06">
+                        <h3 class="sm:text-3xl text-xl font-semibold text-white">Subscribe Now Free:)</h3>
+                    </div>
+
+                    <form action="#" class="text-3xl font-semibold text-white">
+                        <div class="lg:max-w-none sm:flex-row max-w-md justify-center flex mx-auto">
+                            <input type="email" id="email" placeholder="Email Address*"
+                                class="w-full bg-[#2d2d53] mr-5 rounded-xl border text-white border-[#2d2d53] focus:border-indigo-500  outline-none py-4 px-6  placeholder-white text-base font-light transition-colors duration-200 ease-in-out sr07">
+                            <a href="#" class="items-center justify-center btn__hover flex mx-auto text-white hover:text-black bg-indigo-500 border-0 py-0 px-8 focus:outline-none  rounded-xl  text-base font-medium
+                                relative overflow-hidden z-10 sr08">
+                                Subscribe
+                            </a>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--:::::::::::::::::-Footer section-::::::::::::::::-->
+    <section class="bg-[#090a1a] mx-auto pb-14 pt-20 lg:pt-32 overflow-hidden">
+        <div class="mt-10 relative mx-auto ">
+            <div class="max-w-2xl mx-auto text-white py-10">
+                <div class="text-center">
+                    <h3 class="sm:text-2xl text-lg mb-3 sr01"> Thank you so much for coming to </h3>
+                    <h3 class="text-3xl mb-3 font-semibold sr02"> Animation Coding </h3>
+                    <p class="sr03"> Stay fit. All day, every day. </p>
+                    <div class="flex justify-center my-10">
+                        <div class="flex justify-center items-center border rounded-lg px-4 py-2 mx-2 sr04">
+                            <img src="assets/img/icon/youtube.png" class="w-7 md:w-8">
+                            <div class="text-left ml-3">
+                                <p class='text-xs text-gray-200'> XXK Subscribe</p>
+                                <p class="text-sm md:text-base"> youtube </p>
+                            </div>
+                        </div>
+                        <div class="flex justify-center items-center border rounded-lg px-4 py-2 mx-2 sr05">
+                            <img src="assets/img/icon/facebook.png" class="w-7 md:w-8">
+                            <div class="text-left ml-3">
+                                <p class='text-xs text-gray-200'>ZZK Follower</p>
+                                <p class="text-sm md:text-base"> Facebook </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-28 flex flex-col md:flex-row md:justify-between items-center text-sm text-gray-400">
+                    <p class="order-2 md:order-1 mt-8 md:mt-0 sr09"> &copy; AnimationCoding, 2022. </p>
+                    <div class="order-1 md:order-2 sr10">
+                        <span class="px-2">About us</span>
+                        <span class="px-2 border-l">Contact us</span>
+                        <span class="px-2 border-l">Privacy Policy</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---scrollreveal--->
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <!---slider js--->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.4/swiper-bundle.min.js"></script>
+    <!---main js--->
+    <script src="assets/js/js.js"></script>
+
+
+</body>
+
+</html>
